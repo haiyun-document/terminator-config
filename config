@@ -1,36 +1,35 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  title_transmit_bg_color = "#ffe891"
-  title_transmit_fg_color = "#000000"
+title_transmit_bg_color = "#000000"
+title_inactive_bg_color = "#000000"
 [keybindings]
-  go_up = <Alt>k
-  switch_to_tab_10 = <Alt>0
-  switch_to_tab_4 = <Alt>4
-  switch_to_tab_6 = <Alt>6
-  switch_to_tab_7 = <Alt>7
-  go_down = <Alt>j
-  switch_to_tab_5 = <Alt>5
-  switch_to_tab_2 = <Alt>2
-  go_right = <Alt>l
-  switch_to_tab_1 = <Alt>1
-  go_left = <Alt>h
-  switch_to_tab_9 = <Alt>9
-  switch_to_tab_8 = <Alt>8
-  switch_to_tab_3 = <Alt>3
+hide_window = <Shift><Control>a
 [profiles]
-  [[default]]
-    use_system_font = False
-    background_darkness = 0.48
-    scrollback_lines = 5000
-    foreground_color = "#000000"
-    font = Ubuntu Mono 11
-    background_color = "#ffffdd"
+[[default]]
+palette = "#2E2E34343636:#CCCC00000000:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#EFEF29292929:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC"
+visible_bell = True
+background_darkness = 0.83
+scrollback_lines = 5000
+#background_type = transparent
+background_type = solid
+use_system_font = False
+cursor_color = "#d8d8d8"
+foreground_color = "#d8d8d8"
+bold_color = #000000000000
+color_scheme = custom
+font = Monospace 10
+
+#background_color = "#2e3436"
+background_color = "#2f0b24"
+
+
+
+scrollback_infinite = True
 [layouts]
-  [[default]]
-    [[[child1]]]
-      type = Terminal
-      parent = window0
-    [[[window0]]]
-      type = Window
-      parent = ""
+[[default]]
+[[[child1]]]
+type = Terminal
+parent = window0
+[[[window0]]]
+type = Window
+parent = ""
 [plugins]
